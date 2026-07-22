@@ -5,6 +5,7 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { navLinks } from "@/content/project";
+import { PUBLIC_REPOSITORY } from "@/content/site";
 
 export function Navigation() {
   const [open, setOpen] = useState(false);
@@ -51,14 +52,14 @@ export function Navigation() {
         <div className="desktop-nav">
           {navLinks.map((link) => <Link key={link.label} href={link.href}>{link.label}</Link>)}
         </div>
-        <a className="github-link" href="https://github.com/" target="_blank" rel="noreferrer">View GitHub <ArrowUpRight size={14} /></a>
+        <a className="github-link" href={PUBLIC_REPOSITORY} target="_blank" rel="noreferrer">View GitHub <ArrowUpRight size={14} /></a>
         <button type="button" className="menu-toggle" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="mobile-navigation" aria-label={open ? "Close menu" : "Open menu"}>
           {open ? <X /> : <Menu />}
         </button>
       </nav>
       <div id="mobile-navigation" className={`mobile-nav ${open ? "mobile-nav-open" : ""}`} aria-hidden={!open}>
         {navLinks.map((link, index) => <Link key={link.label} href={link.href} onClick={() => setOpen(false)}><span>0{index + 1}</span>{link.label}</Link>)}
-        <a href="https://github.com/" target="_blank" rel="noreferrer">View GitHub <ArrowUpRight size={16} /></a>
+        <a href={PUBLIC_REPOSITORY} target="_blank" rel="noreferrer">View GitHub <ArrowUpRight size={16} /></a>
       </div>
     </header>
   );

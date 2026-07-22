@@ -1,6 +1,6 @@
 # ARES ReFlight Website
 
-Production-ready editorial website for the ARES ReFlight modular fixed-wing UAV ecosystem. The web application is intentionally isolated from the Windows desktop simulation application in the repository root.
+Editorial website for the independent ARES ReFlight student engineering project. It documents the validated ARES-01 SITL software boundary, conceptual fixed-wing and ground-station studies, public corrections, and development evidence. The web application is intentionally isolated from the Windows desktop simulation application in the repository root.
 
 ## Run locally
 
@@ -29,17 +29,20 @@ pnpm start
 3. Keep the detected framework preset as **Next.js**.
 4. Deploy. No environment variables or paid services are required.
 
-Before publishing, replace generic GitHub, LinkedIn, and email destinations with verified project accounts, and update `metadataBase`, `sitemap.ts`, and `robots.ts` if the production domain differs from `ares-reflight.vercel.app`.
+The canonical production domain is `https://aresreflight.com`. Domain deployment and the `hello@aresreflight.com` mailbox must be configured and verified separately. The feedback form only prepares a draft in the visitor's email application; it does not store or submit messages on the website.
 
 ## Content model
 
-Project statuses, modules, software capabilities, roadmap items, documentation records, and development posts are centralized in `content/project.ts`. New development entries automatically generate static detail routes under `/development/[slug]`.
+Project statuses, modules, software capabilities, roadmap items, documentation records, and development posts are centralized in `content/project.ts`. Long-form articles and their source records live in `content/articles.ts`. New entries generate static detail routes under `/development/[slug]` and `/engineering-log/[slug]`.
 
 ## Asset provenance
 
 - `public/images/ares-uav-hero.png` is an original AI-generated conceptual aircraft render. It represents no tested physical aircraft and is labeled accordingly in the interface.
 - `public/images/ares-01-operations.png` is a project-local screenshot of the real ARES-01 software operating with simulated telemetry.
+- `public/og.png` is an original AI-generated social card depicting a conceptual uncrewed research aircraft. It is not a photograph of validated hardware.
 
 ## Truth and safety
 
 The site deliberately distinguishes `COMPLETED`, `SIMULATED`, `IN DEVELOPMENT`, `PLANNED`, and `NOT STARTED`. Simulation values are labeled, and no hardware performance or flight validation is claimed.
+
+Public source availability does not imply an open-source license. No license has been selected for this repository at the time of this review.

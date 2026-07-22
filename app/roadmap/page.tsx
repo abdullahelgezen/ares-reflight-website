@@ -3,8 +3,9 @@ import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { StatusLabel } from "@/components/StatusLabel";
 import { roadmap } from "@/content/project";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = { title: "Roadmap", description: "The evidence-led ARES ReFlight path from completed simulation software to planned hardware and flight validation." };
+export const metadata: Metadata = createPageMetadata({ title: "Roadmap", description: "The evidence-led ARES ReFlight path from completed simulation software to planned hardware and flight validation.", path: "/roadmap" });
 
 const versions = [["ARES-01 Software", "v1.3.0", "INITIAL STABLE RELEASE"], ["ARES Air Vehicle", "v0.1.0", "CONCEPT DEVELOPMENT"], ["ARES Ground Station", "v0.1.0", "HARDWARE PLANNING"], ["ARES Antenna Tracker", "v0.1.0", "ARCHITECTURE PLANNING"], ["ARES ReFlight Integrated System", "v0.1.0", "IN DEVELOPMENT"]];
 

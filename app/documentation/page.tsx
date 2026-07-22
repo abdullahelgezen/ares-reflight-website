@@ -5,8 +5,9 @@ import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { StatusLabel } from "@/components/StatusLabel";
 import { documentation } from "@/content/project";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = { title: "Documentation", description: "ARES ReFlight system, software, safety, simulation, testing, and roadmap documentation index." };
+export const metadata: Metadata = createPageMetadata({ title: "Documentation", description: "ARES ReFlight system, software, safety, simulation, testing, and roadmap documentation index.", path: "/documentation" });
 
 export default function DocumentationPage() {
   return <main id="main-content"><PageHero index="07" eyebrow="TECHNICAL DOCUMENTATION" title="Architecture before assertion." copy="A structured index of the system evidence, safety decisions, simulation environment, and development path." aside={<><span>DOCUMENT SET</span><b>ARES REF / 2026</b><small>REVISION-CONTROLLED CONTENT</small></>} />

@@ -107,7 +107,7 @@ export const navLinks = [
   { label: "System", href: "/#system" },
   { label: "Software", href: "/#software" },
   { label: "Air Vehicle", href: "/#air-vehicle" },
-  { label: "Development", href: "/development" },
+  { label: "Journal", href: "/engineering-log" },
   { label: "Documentation", href: "/documentation" },
   { label: "About", href: "/about" },
 ];

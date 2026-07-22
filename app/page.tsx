@@ -8,6 +8,16 @@ import { TelemetryPanel } from "@/components/TelemetryPanel";
 import { TrackerDiagram } from "@/components/TrackerDiagram";
 import { Reveal } from "@/components/Reveal";
 import { developmentEntries, roadmap, softwareFeatures } from "@/content/project";
+import { engineeringArticles } from "@/content/articles";
+import { PUBLIC_REPOSITORY } from "@/content/site";
+import { createPageMetadata } from "@/lib/metadata";
+import { ArticleStatusBadge } from "@/components/ArticleStatusBadge";
+
+export const metadata = createPageMetadata({
+  title: "ARES ReFlight — Modular Fixed-Wing UAS Research",
+  description: "ARES ReFlight combines ARES-01 simulation software with conceptual fixed-wing, ground-station, antenna-tracking, and humanitarian engineering research.",
+  path: "/",
+});
 
 export default function Home() {
   return (
@@ -21,7 +31,7 @@ export default function Home() {
           <h1><span>ARES</span> ReFlight</h1>
           <p className="hero-subhead">A modular fixed-wing UAV ecosystem for post-disaster reconnaissance, mapping, and engineering research.</p>
           <p className="hero-support">Custom ground-control software. Modular air vehicle. Telemetry architecture. A planned automated antenna-tracking ground station.</p>
-          <div className="hero-actions"><a className="button button-light" href="#system">Explore the System <ArrowDown size={16} /></a><Link className="button button-ghost" href="/development">Development Log <ArrowRight size={16} /></Link><a className="text-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14} /></a></div>
+          <div className="hero-actions"><a className="button button-light" href="#system">Explore the System <ArrowDown size={16} /></a><Link className="button button-ghost" href="/engineering-log">Engineering Log <ArrowRight size={16} /></Link><a className="text-link" href={PUBLIC_REPOSITORY} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14} /></a></div>
         </div>
         <div className="hero-meta page-width">
           <div><span>01 / SOFTWARE</span><p><i className="dot-complete" />ARES-01 v1.3.0</p><b>INITIAL STABLE RELEASE</b></div>
@@ -115,12 +125,13 @@ export default function Home() {
       <section className="section log-section">
         <div className="page-width"><Reveal><div className="timeline-heading light"><SectionHeader eyebrow="09 · FIELD NOTES" title="Development log" copy="Architecture decisions, safety boundaries, experiments, and the path from simulation to hardware." /><Link href="/development">View all entries <ArrowRight size={15} /></Link></div></Reveal>
           <div className="log-grid">{developmentEntries.slice(0, 3).map((entry, i) => <Reveal key={entry.slug} className="log-card" delay={i * .07}><div><span>{entry.date}</span><StatusLabel status={entry.status} /></div><small>{entry.category} / {entry.stage}</small><h3>{entry.title}</h3><p>{entry.summary}</p><Link href={`/development/${entry.slug}`}>Read project note <ArrowUpRight size={14} /></Link></Reveal>)}</div>
+          <Reveal className="home-journal-rail"><div><span>NEW / ENGINEERING JOURNAL</span><h3>Technical studies with visible evidence boundaries.</h3><p>Read the telemetry retrospective, airframe trade studies, coastal communications strategy, and sourced disaster-response assessment.</p></div><div>{engineeringArticles.slice(0, 3).map((article) => <Link key={article.slug} href={`/engineering-log/${article.slug}`}><ArticleStatusBadge status={article.status} /><b>{article.title}</b><ArrowUpRight size={15} /></Link>)}</div><Link className="button button-dark" href="/engineering-log">Open Engineering Log <ArrowRight size={15} /></Link></Reveal>
         </div>
       </section>
 
       <section className="contact-section">
         <div className="contact-orbit" aria-hidden="true"><i /><i /><span /></div>
-        <div className="page-width contact-grid"><Reveal><p className="eyebrow eyebrow-light"><span>10 · CONTINUE THE MISSION</span></p><h2>Follow the development of ARES ReFlight.</h2></Reveal><Reveal className="contact-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <ArrowUpRight /></a><a href="https://instagram.com/ares.reflight" target="_blank" rel="noreferrer">Instagram <span>@ares.reflight</span><ArrowUpRight /></a><a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight /></a><a href="mailto:hello@ares-reflight.dev">Email <ArrowUpRight /></a></Reveal></div>
+        <div className="page-width contact-grid"><Reveal><p className="eyebrow eyebrow-light"><span>10 · CONTINUE THE MISSION</span></p><h2>Follow the development of ARES ReFlight.</h2></Reveal><Reveal className="contact-links"><a href={PUBLIC_REPOSITORY} target="_blank" rel="noreferrer">GitHub <ArrowUpRight /></a><a href="https://instagram.com/ares.reflight" target="_blank" rel="noreferrer">Instagram <span>@ares.reflight</span><ArrowUpRight /></a><Link href="/engineering-log">Engineering Log <ArrowUpRight /></Link><Link href="/contribute">Technical Feedback <ArrowUpRight /></Link></Reveal></div>
       </section>
     </main>
   );

@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { StatusLabel } from "@/components/StatusLabel";
 import { developmentEntries } from "@/content/project";
+import { createPageMetadata } from "@/lib/metadata";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -15,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const entry = developmentEntries.find((item) => item.slug === slug);
-  return entry ? { title: entry.title, description: entry.summary } : {};
+  return entry ? createPageMetadata({ title: entry.title, description: entry.summary, path: `/development/${entry.slug}` }) : {};
 }
 
 export default async function DevelopmentEntryPage({ params }: Props) {
