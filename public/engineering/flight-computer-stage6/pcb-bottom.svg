@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
- <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
- "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
+ <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg
   xmlns:svg="http://www.w3.org/2000/svg"
   xmlns="http://www.w3.org/2000/svg"
@@ -14,8 +14,8 @@
 stroke-linecap:round; stroke-linejoin:round;"
  transform="translate(0 0) scale(1 1)">
 </g>
-<g style="fill:none; 
-stroke:#4D7FC4; stroke-width:1.0000; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#4D7FC4; stroke-width:1.0000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <path d="M20.3148 77.6700
 L20.3148 78.7700
@@ -31,22 +31,22 @@ L11.6748 82.8000
 " />
 </g>
 <g style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;">
-<circle cx="36.9948" cy="10.4500" r="0.2500" /> 
+<circle cx="36.9948" cy="10.4500" r="0.2500" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 37.2448,11.8000
 37.2448,10.2000
 36.7448,10.2000
 36.7448,11.8000
-Z" /> 
-<circle cx="36.9948" cy="11.5500" r="0.2500" /> 
+Z" />
+<circle cx="36.9948" cy="11.5500" r="0.2500" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 54.8448,68.8500
 54.8448,67.1500
 53.1448,67.1500
 53.1448,68.8500
-Z" /> 
-<circle cx="53.9948" cy="70.5400" r="0.8500" /> 
-<circle cx="53.9948" cy="73.0800" r="0.8500" /> 
+Z" />
+<circle cx="53.9948" cy="70.5400" r="0.8500" />
+<circle cx="53.9948" cy="73.0800" r="0.8500" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,38.2250
 44.3309,38.2079
@@ -68,7 +68,7 @@ d="M 44.2448,38.2250
 43.5857,38.1591
 43.6587,38.2079
 43.7448,38.2250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,36.6750
 44.3309,36.6579
@@ -90,7 +90,7 @@ d="M 44.2448,36.6750
 43.5857,36.6091
 43.6587,36.6579
 43.7448,36.6750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,47.8250
 44.3309,47.8079
@@ -112,7 +112,7 @@ d="M 44.2448,47.8250
 43.5857,47.7591
 43.6587,47.8079
 43.7448,47.8250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,46.2750
 44.3309,46.2579
@@ -134,7 +134,7 @@ d="M 44.2448,46.2750
 43.5857,46.2091
 43.6587,46.2579
 43.7448,46.2750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 19.3448,61.4750
 19.3638,61.5707
@@ -156,7 +156,7 @@ d="M 19.3448,61.4750
 19.4180,60.3482
 19.3638,60.4293
 19.3448,60.5250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 21.2448,61.4750
 21.2638,61.5707
@@ -178,7 +178,7 @@ d="M 21.2448,61.4750
 21.3180,60.3482
 21.2638,60.4293
 21.2448,60.5250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,47.8250
 16.3309,47.8079
@@ -200,7 +200,7 @@ d="M 16.2448,47.8250
 15.5857,47.7591
 15.6587,47.8079
 15.7448,47.8250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,46.2750
 16.3309,46.2579
@@ -222,7 +222,7 @@ d="M 16.2448,46.2750
 15.5857,46.2091
 15.6587,46.2579
 15.7448,46.2750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 38.7698,61.2500
 38.7869,61.3361
@@ -244,7 +244,7 @@ d="M 38.7698,61.2500
 38.8357,60.5909
 38.7869,60.6639
 38.7698,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 40.3198,61.2500
 40.3369,61.3361
@@ -266,7 +266,7 @@ d="M 40.3198,61.2500
 40.3857,60.5909
 40.3369,60.6639
 40.3198,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 32.3698,61.2500
 32.3869,61.3361
@@ -288,7 +288,7 @@ d="M 32.3698,61.2500
 32.4357,60.5909
 32.3869,60.6639
 32.3698,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 33.9198,61.2500
 33.9369,61.3361
@@ -310,7 +310,7 @@ d="M 33.9198,61.2500
 33.9857,60.5909
 33.9369,60.6639
 33.9198,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,44.6250
 44.3309,44.6079
@@ -332,7 +332,7 @@ d="M 44.2448,44.6250
 43.5857,44.5591
 43.6587,44.6079
 43.7448,44.6250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,43.0750
 44.3309,43.0579
@@ -354,7 +354,7 @@ d="M 44.2448,43.0750
 43.5857,43.0091
 43.6587,43.0579
 43.7448,43.0750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,38.2250
 16.3309,38.2079
@@ -376,7 +376,7 @@ d="M 16.2448,38.2250
 15.5857,38.1591
 15.6587,38.2079
 15.7448,38.2250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,36.6750
 16.3309,36.6579
@@ -398,7 +398,7 @@ d="M 16.2448,36.6750
 15.5857,36.6091
 15.6587,36.6579
 15.7448,36.6750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 22.7698,61.2500
 22.7869,61.3361
@@ -420,7 +420,7 @@ d="M 22.7698,61.2500
 22.8357,60.5909
 22.7869,60.6639
 22.7698,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 24.3198,61.2500
 24.3369,61.3361
@@ -442,7 +442,7 @@ d="M 24.3198,61.2500
 24.3857,60.5909
 24.3369,60.6639
 24.3198,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,41.4250
 44.3309,41.4079
@@ -464,7 +464,7 @@ d="M 44.2448,41.4250
 43.5857,41.3591
 43.6587,41.4079
 43.7448,41.4250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,39.8750
 44.3309,39.8579
@@ -486,7 +486,7 @@ d="M 44.2448,39.8750
 43.5857,39.8091
 43.6587,39.8579
 43.7448,39.8750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,44.6250
 16.3309,44.6079
@@ -508,7 +508,7 @@ d="M 16.2448,44.6250
 15.5857,44.5591
 15.6587,44.6079
 15.7448,44.6250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,43.0750
 16.3309,43.0579
@@ -530,7 +530,7 @@ d="M 16.2448,43.0750
 15.5857,43.0091
 15.6587,43.0579
 15.7448,43.0750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,57.4250
 16.3309,57.4079
@@ -552,7 +552,7 @@ d="M 16.2448,57.4250
 15.5857,57.3591
 15.6587,57.4079
 15.7448,57.4250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,55.8750
 16.3309,55.8579
@@ -574,7 +574,7 @@ d="M 16.2448,55.8750
 15.5857,55.8091
 15.6587,55.8579
 15.7448,55.8750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 35.5698,61.2500
 35.5869,61.3361
@@ -596,7 +596,7 @@ d="M 35.5698,61.2500
 35.6357,60.5909
 35.5869,60.6639
 35.5698,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 37.1198,61.2500
 37.1369,61.3361
@@ -618,7 +618,7 @@ d="M 37.1198,61.2500
 37.1857,60.5909
 37.1369,60.6639
 37.1198,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,57.4250
 44.3309,57.4079
@@ -640,7 +640,7 @@ d="M 44.2448,57.4250
 43.5857,57.3591
 43.6587,57.4079
 43.7448,57.4250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,55.8750
 44.3309,55.8579
@@ -662,7 +662,7 @@ d="M 44.2448,55.8750
 43.5857,55.8091
 43.6587,55.8579
 43.7448,55.8750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,54.2250
 16.3309,54.2079
@@ -684,7 +684,7 @@ d="M 16.2448,54.2250
 15.5857,54.1591
 15.6587,54.2079
 15.7448,54.2250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,52.6750
 16.3309,52.6579
@@ -706,7 +706,7 @@ d="M 16.2448,52.6750
 15.5857,52.6091
 15.6587,52.6579
 15.7448,52.6750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 29.1698,61.2500
 29.1869,61.3361
@@ -728,7 +728,7 @@ d="M 29.1698,61.2500
 29.2357,60.5909
 29.1869,60.6639
 29.1698,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 30.7198,61.2500
 30.7369,61.3361
@@ -750,7 +750,7 @@ d="M 30.7198,61.2500
 30.7857,60.5909
 30.7369,60.6639
 30.7198,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,41.4250
 16.3309,41.4079
@@ -772,7 +772,7 @@ d="M 16.2448,41.4250
 15.5857,41.3591
 15.6587,41.4079
 15.7448,41.4250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,39.8750
 16.3309,39.8579
@@ -794,7 +794,7 @@ d="M 16.2448,39.8750
 15.5857,39.8091
 15.6587,39.8579
 15.7448,39.8750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 25.9698,61.2500
 25.9869,61.3361
@@ -816,7 +816,7 @@ d="M 25.9698,61.2500
 26.0357,60.5909
 25.9869,60.6639
 25.9698,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 27.5198,61.2500
 27.5369,61.3361
@@ -838,7 +838,7 @@ d="M 27.5198,61.2500
 27.5857,60.5909
 27.5369,60.6639
 27.5198,60.7500
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,54.2250
 44.3309,54.2079
@@ -860,7 +860,7 @@ d="M 44.2448,54.2250
 43.5857,54.1591
 43.6587,54.2079
 43.7448,54.2250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,52.6750
 44.3309,52.6579
@@ -882,7 +882,7 @@ d="M 44.2448,52.6750
 43.5857,52.6091
 43.6587,52.6579
 43.7448,52.6750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,51.0250
 44.3309,51.0079
@@ -904,7 +904,7 @@ d="M 44.2448,51.0250
 43.5857,50.9591
 43.6587,51.0079
 43.7448,51.0250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 44.2448,49.4750
 44.3309,49.4579
@@ -926,7 +926,7 @@ d="M 44.2448,49.4750
 43.5857,49.4091
 43.6587,49.4579
 43.7448,49.4750
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,51.0250
 16.3309,51.0079
@@ -948,7 +948,7 @@ d="M 16.2448,51.0250
 15.5857,50.9591
 15.6587,51.0079
 15.7448,51.0250
-Z" /> 
+Z" />
 <path style="fill:#4D7FC4; fill-opacity:1.0000; stroke:none;fill-rule:evenodd;"
 d="M 16.2448,49.4750
 16.3309,49.4579
@@ -970,10 +970,10 @@ d="M 16.2448,49.4750
 15.5857,49.4091
 15.6587,49.4579
 15.7448,49.4750
-Z" /> 
+Z" />
 </g>
-<g style="fill:none; 
-stroke:#E8B2A7; stroke-width:0.1200; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#E8B2A7; stroke-width:0.1200; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <path d="M44.5048 37.1406
 L44.5048 36.8594
@@ -1102,8 +1102,8 @@ L16.5048 49.6594
 L15.4848 49.6594
 " />
 </g>
-<g style="fill:none; 
-stroke:#585D84; stroke-width:0.0600; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#585D84; stroke-width:0.0600; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <g transform="rotate(90.000000 43.9948 37.0000)">
 <text x="43.9948" y="37.2000"
@@ -1388,8 +1388,8 @@ L43.9462 47.2571
 L43.9462 47.5048
 " />
 </g></g>
-<g style="fill:none; 
-stroke:#585D84; stroke-width:0.0800; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#585D84; stroke-width:0.0800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <text x="20.7948" y="61.2500"
 textLength="4.8543" font-size="0.6667" lengthAdjust="spacingAndGlyphs"
@@ -1633,8 +1633,8 @@ L22.8186 60.8462
 L22.7710 60.8700
 " />
 </g></g>
-<g style="fill:none; 
-stroke:#585D84; stroke-width:0.0600; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#585D84; stroke-width:0.0600; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <g transform="rotate(90.000000 15.9948 46.6000)">
 <text x="15.9948" y="46.8000"
@@ -4720,193 +4720,193 @@ L16.1176 50.6667
 <path d="M16.1176 50.6667
 L16.0986 50.6286
 " />
-</g><path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+</g><path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 44.3948,36.2000
 43.5948,36.2000
 43.5948,37.8000
 44.3948,37.8000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 44.3948,45.8000
 43.5948,45.8000
 43.5948,47.4000
 44.3948,47.4000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 21.7948,60.3750
 19.7948,60.3750
 19.7948,61.6250
 21.7948,61.6250
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 16.3948,45.8000
 15.5948,45.8000
 15.5948,47.4000
 16.3948,47.4000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 40.7948,60.6000
 39.1948,60.6000
 39.1948,61.4000
 40.7948,61.4000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 34.3948,60.6000
 32.7948,60.6000
 32.7948,61.4000
 34.3948,61.4000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 44.3948,42.6000
 43.5948,42.6000
 43.5948,44.2000
 44.3948,44.2000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 16.3948,36.2000
 15.5948,36.2000
 15.5948,37.8000
 16.3948,37.8000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 24.7948,60.6000
 23.1948,60.6000
 23.1948,61.4000
 24.7948,61.4000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 44.3948,39.4000
 43.5948,39.4000
 43.5948,41.0000
 44.3948,41.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 16.3948,42.6000
 15.5948,42.6000
 15.5948,44.2000
 16.3948,44.2000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 16.3948,55.4000
 15.5948,55.4000
 15.5948,57.0000
 16.3948,57.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 37.5948,60.6000
 35.9948,60.6000
 35.9948,61.4000
 37.5948,61.4000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 44.3948,55.4000
 43.5948,55.4000
 43.5948,57.0000
 44.3948,57.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 16.3948,52.2000
 15.5948,52.2000
 15.5948,53.8000
 16.3948,53.8000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 31.1948,60.6000
 29.5948,60.6000
 29.5948,61.4000
 31.1948,61.4000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 16.3948,39.4000
 15.5948,39.4000
 15.5948,41.0000
 16.3948,41.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 27.9948,60.6000
 26.3948,60.6000
 26.3948,61.4000
 27.9948,61.4000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 44.3948,52.2000
 43.5948,52.2000
 43.5948,53.8000
 44.3948,53.8000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 44.3948,49.0000
 43.5948,49.0000
 43.5948,50.6000
 44.3948,50.6000
-Z" /> 
-<path style="fill:none; 
-stroke:#585D84; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#585D84; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 16.3948,49.0000
 15.5948,49.0000
 15.5948,50.6000
 16.3948,50.6000
-Z" /> 
-<path style="fill:none; 
-stroke:#D0D2CD; stroke-width:0.1000; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#D0D2CD; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 59.9948,0.0000
 -0.0052,0.0000
 -0.0052,85.0000
 59.9948,85.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 59.9948,37.0000
 45.9948,37.0000
 45.9948,51.0000
 59.9948,51.0000
-Z" /> 
+Z" />
 </g>
-<g style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.2500; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#C2C2C2; stroke-width:0.2500; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <path d="M59.9948 107.0000
 L59.9948 109.0000
@@ -4915,70 +4915,70 @@ L59.9948 109.0000
 L9.9948 108.0000
 " />
 </g>
-<g style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.2000; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#C2C2C2; stroke-width:0.2000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
-<circle cx="55.9948" cy="4.0000" r="5.5000" /> 
-<circle cx="55.9948" cy="81.0000" r="5.5000" /> 
-<path style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1; 
+<circle cx="55.9948" cy="4.0000" r="5.5000" />
+<circle cx="55.9948" cy="81.0000" r="5.5000" />
+<path style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 51.4948,85.0000
 38.4948,85.0000
 38.4948,100.0000
 51.4948,100.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 48.9948,-10.0000
 36.9948,-10.0000
 36.9948,0.0000
 48.9948,0.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 43.4948,7.5000
 28.4948,7.5000
 28.4948,14.5000
 43.4948,14.5000
-Z" /> 
-<path style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 41.9948,6.5000
 34.9948,6.5000
 34.9948,15.5000
 41.9948,15.5000
-Z" /> 
-<path style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 39.9948,8.5000
 32.9948,8.5000
 32.9948,13.5000
 39.9948,13.5000
-Z" /> 
-<path style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 38.4948,85.0000
 25.4948,85.0000
 25.4948,100.0000
 38.4948,100.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 36.4948,22.5000
 23.4948,22.5000
 23.4948,34.5000
 36.4948,34.5000
-Z" /> 
+Z" />
 </g>
-<g style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1500; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1500; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <path d="M31.9948 42.5000
 L24.9948 42.5000
@@ -4986,46 +4986,46 @@ L24.9948 42.5000
 <path d="M29.9948 44.5000
 L29.9948 37.5000
 " />
-<path style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1; 
+<path style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 23.9948,-16.0000
 9.9948,-16.0000
 9.9948,0.0000
 23.9948,0.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 23.4948,85.0000
 8.4948,85.0000
 8.4948,105.0000
 23.4948,105.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1800; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 16.4948,25.5000
 9.4948,25.5000
 9.4948,32.5000
 16.4948,32.5000
-Z" /> 
+Z" />
 </g>
-<g style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.2500; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#C2C2C2; stroke-width:0.2500; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <path d="M9.9948 107.0000
 L9.9948 109.0000
 " />
 </g>
-<g style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.2000; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#C2C2C2; stroke-width:0.2000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
-<circle cx="3.9948" cy="4.0000" r="5.5000" /> 
-<circle cx="3.9948" cy="81.0000" r="5.5000" /> 
+<circle cx="3.9948" cy="4.0000" r="5.5000" />
+<circle cx="3.9948" cy="81.0000" r="5.5000" />
 </g>
-<g style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1000; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <text x="12.9948" y="32.3000"
 transform="scale(-1 1) translate(-25.989600 0)"
@@ -17709,8 +17709,8 @@ L-0.2885 87.4853
 L-0.2552 87.4520
 " />
 </g></g>
-<g style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1200; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1200; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <text x="34.9948" y="109.9000"
 transform="scale(-1 1) translate(-69.989600 0)"
@@ -18582,8 +18582,8 @@ L21.3948 109.8639
 L21.3186 109.8258
 " />
 </g></g>
-<g style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1500; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1500; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <text x="24.4948" y="42.9000"
 transform="scale(-1 1) translate(-48.989600 0)"
@@ -19989,8 +19989,8 @@ L-1.9423 39.6714
 L-2.4138 39.6714
 " />
 </g></g>
-<g style="fill:none; 
-stroke:#C2C2C2; stroke-width:0.1000; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#C2C2C2; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <text x="15.9948" y="84.6750"
 transform="scale(-1 1) translate(-31.989600 0)"
@@ -20264,81 +20264,81 @@ L14.4948 84.4844
 </g><path d="M10.9948 85.0000
 L20.9948 85.0000
 " />
-<path style="fill:none; 
-stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1; 
+<path style="fill:none;
+stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 59.4948,6.0000
 26.9948,6.0000
 26.9948,25.0000
 59.4948,25.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 59.4948,36.5000
 45.4948,36.5000
 45.4948,75.0000
 59.4948,75.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 51.9948,73.0000
 24.9948,73.0000
 24.9948,84.5000
 51.9948,84.5000
-Z" /> 
-<path style="fill:none; 
-stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 49.4948,0.5000
 36.4948,0.5000
 36.4948,10.0000
 49.4948,10.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 45.9948,33.0000
 13.9948,33.0000
 13.9948,64.0000
 45.9948,64.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 36.4948,22.5000
 23.4948,22.5000
 23.4948,34.5000
 36.4948,34.5000
-Z" /> 
-<path style="fill:none; 
-stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 26.4948,0.5000
 1.4948,0.5000
 1.4948,23.0000
 26.4948,23.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 24.4948,64.5000
 6.4948,64.5000
 6.4948,85.0000
 24.4948,85.0000
-Z" /> 
-<path style="fill:none; 
-stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1; 
+Z" />
+<path style="fill:none;
+stroke:#5994DC; stroke-width:0.1200; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;fill:none"
 d="M 16.9948,23.0000
 0.9948,23.0000
 0.9948,36.0000
 16.9948,36.0000
-Z" /> 
+Z" />
 </g>
-<g style="fill:none; 
-stroke:#5994DC; stroke-width:0.1000; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#5994DC; stroke-width:0.1000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <text x="58.9948" y="7.0250"
 transform="scale(-1 1) translate(-117.989600 0)"
@@ -21955,8 +21955,8 @@ L13.9412 23.6860
 L14.1888 23.6860
 " />
 </g></g>
-<g style="fill:none; 
-stroke:#5994DC; stroke-width:0.0700; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#5994DC; stroke-width:0.0700; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <g transform="rotate(90.000000 52.9948 44.0000)">
 <text x="52.9948" y="44.2000"
@@ -22110,68 +22110,68 @@ L53.2134 42.7048
 L53.2134 42.8190
 " />
 </g></g>
-<g style="fill:none; 
-stroke:#5994DC; stroke-width:0.1500; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#5994DC; stroke-width:0.1500; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
-<circle cx="3.9948" cy="4.0000" r="3.2000" /> 
-<circle cx="3.9948" cy="81.0000" r="3.2000" /> 
-<circle cx="55.9948" cy="81.0000" r="3.2000" /> 
-<circle cx="55.9948" cy="4.0000" r="3.2000" /> 
+<circle cx="3.9948" cy="4.0000" r="3.2000" />
+<circle cx="3.9948" cy="81.0000" r="3.2000" />
+<circle cx="55.9948" cy="81.0000" r="3.2000" />
+<circle cx="55.9948" cy="4.0000" r="3.2000" />
 </g>
 <g style="fill:#000000; fill-opacity:1.0000; stroke:none;">
-<circle cx="3.9948" cy="4.0000" r="1.6000" /> 
-<circle cx="3.9948" cy="81.0000" r="1.6000" /> 
-<circle cx="55.9948" cy="81.0000" r="1.6000" /> 
-<circle cx="18.8848" cy="78.7200" r="0.3250" /> 
-<circle cx="13.1048" cy="78.7200" r="0.3250" /> 
+<circle cx="3.9948" cy="4.0000" r="1.6000" />
+<circle cx="3.9948" cy="81.0000" r="1.6000" />
+<circle cx="55.9948" cy="81.0000" r="1.6000" />
+<circle cx="18.8848" cy="78.7200" r="0.3250" />
+<circle cx="13.1048" cy="78.7200" r="0.3250" />
 </g>
-<g style="fill:none; 
-stroke:#FFFFFF; stroke-width:0.6000; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#FFFFFF; stroke-width:0.6000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <path d="M20.3148 77.6700
 L20.3148 78.7700
 " />
 </g>
-<g style="fill:none; 
-stroke:#FFFFFF; stroke-width:0.6000; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#FFFFFF; stroke-width:0.6000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <path d="M20.3148 82.0000
 L20.3148 82.8000
 " />
 </g>
-<g style="fill:none; 
-stroke:#FFFFFF; stroke-width:0.6000; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#FFFFFF; stroke-width:0.6000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <path d="M11.6748 77.6700
 L11.6748 78.7700
 " />
 </g>
-<g style="fill:none; 
-stroke:#FFFFFF; stroke-width:0.6000; stroke-opacity:1; 
+<g style="fill:none;
+stroke:#FFFFFF; stroke-width:0.6000; stroke-opacity:1;
 stroke-linecap:round; stroke-linejoin:round;">
 <path d="M11.6748 82.0000
 L11.6748 82.8000
 " />
 </g>
 <g style="fill:#FFFFFF; fill-opacity:1.0000; stroke:none;">
-<circle cx="36.9948" cy="10.4500" r="0.1000" /> 
+<circle cx="36.9948" cy="10.4500" r="0.1000" />
 </g>
 <g style="fill:#FFFFFF; fill-opacity:1.0000; stroke:none;">
-<circle cx="36.9948" cy="11.5500" r="0.1000" /> 
+<circle cx="36.9948" cy="11.5500" r="0.1000" />
 </g>
 <g style="fill:#000000; fill-opacity:1.0000; stroke:none;">
-<circle cx="55.9948" cy="4.0000" r="1.6000" /> 
-<circle cx="52.9948" cy="46.5400" r="0.4953" /> 
-<circle cx="54.0108" cy="41.4600" r="0.4953" /> 
-<circle cx="51.9788" cy="41.4600" r="0.4953" /> 
+<circle cx="55.9948" cy="4.0000" r="1.6000" />
+<circle cx="52.9948" cy="46.5400" r="0.4953" />
+<circle cx="54.0108" cy="41.4600" r="0.4953" />
+<circle cx="51.9788" cy="41.4600" r="0.4953" />
 </g>
 <g style="fill:#FFFFFF; fill-opacity:1.0000; stroke:none;">
-<circle cx="53.9948" cy="68.0000" r="0.5000" /> 
+<circle cx="53.9948" cy="68.0000" r="0.5000" />
 </g>
 <g style="fill:#FFFFFF; fill-opacity:1.0000; stroke:none;">
-<circle cx="53.9948" cy="70.5400" r="0.5000" /> 
+<circle cx="53.9948" cy="70.5400" r="0.5000" />
 </g>
 <g style="fill:#FFFFFF; fill-opacity:1.0000; stroke:none;">
-<circle cx="53.9948" cy="73.0800" r="0.5000" /> 
-</g> 
+<circle cx="53.9948" cy="73.0800" r="0.5000" />
+</g>
 </svg>
