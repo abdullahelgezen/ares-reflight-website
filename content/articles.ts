@@ -4,6 +4,7 @@ export type ArticleStatus =
   | "Engineering Note"
   | "Concept Study"
   | "Software Validated in SITL"
+  | "Bench/HIL Prototype"
   | "Hardware Not Yet Validated"
   | "Retrospective Development Log";
 
@@ -44,11 +45,197 @@ export type EngineeringArticle = {
   sections: ArticleSection[];
   sources?: ArticleSource[];
   related: string[];
+  internalLinks?: { label: string; href: string }[];
+  reviewCallToAction?: string;
+  heroImage?: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
 };
 
-const publication = CONTENT_REVIEW_DATE;
+const publication = "2026-07-22";
+export const FLIGHT_COMPUTER_STAGE5C_IMAGE = {
+  src: "/engineering/ares-flight-computer-stage5c.png",
+  alt: "ARES ReFlight Stage 5C hardware milestone showing a blue Rev A flight-computer concept and verified engineering status.",
+  width: 1254,
+  height: 1254,
+} as const;
 
 export const engineeringArticles: EngineeringArticle[] = [
+  {
+    slug: "ares-flight-computer-rev-a-schematic-closure",
+    title: "ARES Flight Computer Rev A: Closing the Schematic and Entering Physical PCB Design",
+    subtitle: "Stage 5C closes the Rev A schematic baseline with a clean ERC and complete component bindings while keeping the hardware explicitly inside a bench/HIL validation boundary.",
+    summary: "How ARES-FC-REV-A-SCH-5C.0 reduced scope, closed its schematic checks, and became eligible for PCB placement consideration without claiming routing, fabrication, or flight readiness.",
+    status: "Bench/HIL Prototype",
+    published: CONTENT_REVIEW_DATE,
+    updated: CONTENT_REVIEW_DATE,
+    readingMinutes: 16,
+    heroImage: FLIGHT_COMPUTER_STAGE5C_IMAGE,
+    disclaimer: "ARES-FC-REV-A-SCH-5C.0 is a BENCH/HIL PROTOTYPE and is NOT FLIGHT APPROVED. Stage 5C schematic closure does not mean that PCB placement, routing, fabrication, assembly, bring-up, environmental testing, or flight validation has been completed.",
+    topics: ["Flight computer", "Schematic closure", "PCB design", "Bench/HIL"],
+    sections: [
+      {
+        id: "why-reduced",
+        title: "Why Rev A was reduced",
+        paragraphs: [
+          "Rev A was deliberately narrowed to reduce simultaneous unknowns before physical layout. The objective is not to place every future interface on the first board. It is to create a traceable flight-computer baseline whose power, sensing, storage, programming, and communications paths can be reviewed and measured on the bench.",
+          "Removing lower-priority functions reduces routing density, power-domain complexity, connector count, firmware surface area, and the number of failure modes that would otherwise have to be diagnosed during first bring-up. This is a prototype risk-control decision, not a statement that the removed functions have no future value.",
+        ],
+        callout: "Rev A is intentionally a focused bench/HIL learning platform. Reduced scope is being used to improve inspectability before physical PCB design begins.",
+      },
+      {
+        id: "retained-architecture",
+        title: "Final retained architecture",
+        paragraphs: [
+          "The retained architecture centers on the STM32H743ZIT6 and keeps only the interfaces required to evaluate a practical first flight-computer prototype. The BMI088 remains the primary inertial sensor, the BMP390 provides barometric sensing, and the Molex 104031-0811 socket provides removable microSD logging.",
+        ],
+        bullets: [
+          "STM32H743ZIT6 microcontroller.",
+          "BMI088 primary IMU.",
+          "BMP390 barometer.",
+          "Molex 104031-0811 microSD socket.",
+          "GNSS UART with PPS timing input.",
+          "Telemetry A and Telemetry B.",
+          "Debug UART.",
+          "USB 2.0 Full-Speed device interface.",
+          "Tag-Connect SWD programming and debug.",
+          "Dedicated reset and BOOT0 access.",
+          "Status LEDs and engineering test points.",
+        ],
+      },
+      {
+        id: "stage-5c-closure",
+        title: "What Stage 5C closed",
+        paragraphs: [
+          "Stage 5C establishes the named schematic baseline ARES-FC-REV-A-SCH-5C.0. The closure review covered population state, electrical-rule checks, footprint assignment, manufacturer-part-number binding, and symbol-to-pad mapping.",
+          "These checks make the design eligible for Stage 6 PCB placement consideration. They do not prove that the selected parts are available, mechanically suitable, correctly oriented in a physical assembly, thermally adequate, or electrically correct under real operating conditions.",
+        ],
+        table: {
+          headers: ["Closure check", "Verified result"],
+          rows: [
+            ["Populated BOM", "69 components"],
+            ["DNP", "0"],
+            ["ERC errors", "0"],
+            ["ERC warnings", "0"],
+            ["ERC exclusions", "0"],
+            ["Missing footprint assignments", "0"],
+            ["Missing exact MPNs", "0"],
+            ["Symbol-to-pad mismatches", "0"],
+          ],
+        },
+        callout: "Clean automated checks are necessary evidence of schematic closure. They are not evidence of a completed or manufacturable PCB.",
+      },
+      {
+        id: "power-architecture",
+        title: "Power architecture decision",
+        paragraphs: [
+          "The 3.3 V rail is bound to the TPS62162DSGR, a 1 A buck regulator. The input protection baseline uses the Littelfuse 0467.001NRHF 1 A fuse. This creates a concrete power implementation for placement review instead of leaving the regulator and protection strategy as generic symbols.",
+          "The Rev A board does not accept aircraft-battery input directly. Its input-power boundary must remain compatible with the intended bench/HIL supply and later system-level power architecture. Stage 6 will examine current-loop area, regulator component placement, return paths, thermal separation, and access for measurement.",
+        ],
+        callout: "The 1 A regulator and fuse selections are schematic bindings. Load transients, thermal rise, conversion margin, and protection behavior still require physical measurement.",
+      },
+      {
+        id: "sensor-logging",
+        title: "Sensor and logging architecture",
+        paragraphs: [
+          "The BMI088 is retained as the sole Rev A IMU so that mechanical placement, vibration coupling, power integrity, and interface behavior can be evaluated without introducing a second inertial sensor and its associated comparison logic. The BMP390 uses a 400 kHz I2C interface at address 0x76 with 4.7 kΩ pull-ups on SDA and SCL.",
+          "The microSD interface uses SDMMC1 in four-bit mode. CMD and DAT0–DAT3 each use 47 kΩ pull-ups, while card detect uses a 10 kΩ pull-up. The Molex 104031-0811 footprint is the exact retained socket binding.",
+          "First power-up measurements will include BMP390 bus rise time and microSD peak current. Those measurements will be compared with the actual assembled board and firmware access pattern; the schematic values alone do not establish signal-integrity or current-margin acceptance.",
+        ],
+      },
+      {
+        id: "usb-communications",
+        title: "USB and communications interfaces",
+        paragraphs: [
+          "USB is retained as a USB 2.0 Full-Speed device interface. VBUS presence is sensed on PA9 as a GPIO through a 39 kΩ / 82 kΩ divider, with VBDEN disabled. First power-up will measure the resulting PA9 voltage instead of assuming that the calculated divider behavior is sufficient.",
+          "External communications are intentionally separated into GNSS UART plus PPS, Telemetry A, Telemetry B, and a Debug UART. This preserves distinct paths for navigation timing, operational telemetry experiments, and bring-up diagnostics without adding the removed CAN or external expansion interfaces.",
+        ],
+        bullets: [
+          "GNSS data uses UART; PPS remains a separate timing signal.",
+          "Telemetry A and Telemetry B remain independent schematic interfaces.",
+          "Debug UART remains available for controlled bring-up.",
+          "USB device operation and VBUS sensing require bench validation.",
+        ],
+      },
+      {
+        id: "connector-strategy",
+        title: "Exact connector strategy",
+        paragraphs: [
+          "Connector intent is now explicit at the schematic boundary: Molex 104031-0811 for removable microSD, Tag-Connect for SWD, a dedicated USB device connection, and separate access for GNSS/PPS, Telemetry A, Telemetry B, Debug UART, reset, BOOT0, status LEDs, and test points.",
+          "Stage 5C does not close the mechanical connector review. Physical samples, mating-part checks, pin-one orientation, cable exit direction, retention, assembly access, and a 1:1 printed footprint sign-off remain required before placement can be accepted.",
+        ],
+        callout: "An exact library footprint is not a substitute for checking a physical component and its mating system against a 1:1 board print.",
+      },
+      {
+        id: "removed-functions",
+        title: "What was deliberately removed",
+        paragraphs: [
+          "The following functions were removed from Rev A to keep the first physical design review bounded. Their removal must remain visible so later readers do not infer capabilities that are absent from the baseline.",
+        ],
+        bullets: [
+          "CAN.",
+          "Secondary IMU.",
+          "QSPI.",
+          "External ADC connector.",
+          "External status/safety connector.",
+          "Buzzer.",
+          "External HSE and LSE.",
+          "Aircraft-battery input.",
+        ],
+        callout: "Removed from Rev A does not mean rejected permanently. Reintroduction requires a later requirement, architecture review, and a new controlled baseline.",
+      },
+      {
+        id: "stage-6-placement",
+        title: "What Stage 6 placement will examine",
+        paragraphs: [
+          "Stage 6 begins physical PCB design with placement review, not routing. The first task is to establish mechanical and functional constraints before copper paths make those decisions expensive to change.",
+        ],
+        bullets: [
+          "Board outline and usable keep-out regions.",
+          "Mounting-hole location, fastener clearance, and structural load paths.",
+          "Connector access, cable exit direction, insertion clearance, and serviceability.",
+          "BMI088 mechanical isolation, orientation, and distance from vibration and heat sources.",
+          "BMP390 pressure-port protection, airflow exposure, contamination risk, and enclosure interaction.",
+          "Buck-converter thermal and electromagnetic separation from the IMU and barometer.",
+          "USB and microSD edge placement for physical access and controlled routing.",
+          "Preliminary 3D mechanical review before routing begins.",
+        ],
+        callout: "PCB placement and routing have not started. Stage 6 is the next engineering gate, not a completed design phase.",
+      },
+      {
+        id: "human-verification",
+        title: "Remaining human verification",
+        paragraphs: [
+          "Automated closure results cannot confirm every library, sourcing, assembly, or mechanical assumption. Before placement approval, each critical footprint must be checked against the current manufacturer drawing and, where practical, a physical sample.",
+          "The review must include pin numbering, exposed-pad mapping, polarity, package variant, assembly orientation, connector mating, component height, courtyard clearance, test-point access, and availability of the exact manufacturer part number. A 1:1 printout and preliminary 3D assembly review remain mandatory human gates.",
+          "After assembly, first power-up measurements will include USB PA9 voltage, BMP390 rise time, microSD peak current, and buck-converter temperature. Additional rail, reset, clock, programming, interface, and sensor checks will be defined in the bring-up procedure before power is applied.",
+        ],
+      },
+      {
+        id: "limits",
+        title: "What this milestone does not prove",
+        paragraphs: [
+          "Stage 5C does not prove flight readiness, certified-avionics compliance, PCB manufacturability, signal integrity, power integrity, thermal margin, sensor performance, vibration tolerance, electromagnetic compatibility, environmental durability, firmware correctness, or safe aircraft integration.",
+          "No Gerbers, manufacturing package, or fabrication order exists. No PCB routing has started. No board has been manufactured, assembled, powered, tested in HIL hardware, installed in an aircraft, field tested, or flight validated.",
+          "The correct claim is narrow: the Rev A schematic baseline is closed against the listed checks and is eligible to enter placement consideration under continued human review.",
+        ],
+        callout: "ARES-FC-REV-A-SCH-5C.0 remains a BENCH/HIL PROTOTYPE and is NOT FLIGHT APPROVED.",
+      },
+    ],
+    related: ["stabilizing-ares-01-telemetry-pipeline", "telemetry-centric-ares-variant", "conventional-single-fuselage-fixed-wing-concept"],
+    internalLinks: [
+      { label: "Engineering Log", href: "/engineering-log" },
+      { label: "Transparency", href: "/transparency" },
+      { label: "Contribute", href: "/contribute" },
+      { label: "Corrections", href: "/corrections" },
+      { label: "ARES Air Vehicle", href: "/#air-vehicle" },
+      { label: "Documentation", href: "/documentation" },
+    ],
+    reviewCallToAction: "We welcome technical review, sourcing suggestions and manufacturability feedback before placement and routing begin.",
+  },
   {
     slug: "stabilizing-ares-01-telemetry-pipeline",
     title: "Stabilizing the ARES-01 Telemetry Pipeline",

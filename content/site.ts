@@ -7,4 +7,4 @@ export const PROJECT_LEAD_TITLE = "Chief Engineer · ARES ReFlight Project Lead"
 export const PUBLIC_REPOSITORY = "https://github.com/abdullahelgezen/ares-reflight-website";
 export const CONTACT_EMAIL = "hello@aresreflight.com";
 export const CONTACT_EMAIL_CONFIGURED = false;
-export const CONTENT_REVIEW_DATE = "2026-07-22";
+export const CONTENT_REVIEW_DATE = "2026-07-26";

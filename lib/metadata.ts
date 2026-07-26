@@ -8,6 +8,12 @@ type PageMetadataInput = {
   type?: "website" | "article";
   publishedTime?: string;
   modifiedTime?: string;
+  image?: {
+    url: string;
+    width: number;
+    height: number;
+    alt: string;
+  };
 };
 
 export function createPageMetadata({
@@ -17,8 +23,15 @@ export function createPageMetadata({
   type = "website",
   publishedTime,
   modifiedTime,
+  image,
 }: PageMetadataInput): Metadata {
   const canonical = `${SITE_URL}${path}`;
+  const socialImage = image ?? {
+    url: "/og.png",
+    width: 1733,
+    height: 907,
+    alt: "ARES ReFlight Engineering Log social card with a conceptual white uncrewed research aircraft and the statement Evidence before confidence",
+  };
   return {
     title,
     description,
@@ -32,20 +45,13 @@ export function createPageMetadata({
       locale: "en_US",
       type,
       ...(type === "article" ? { publishedTime, modifiedTime, authors: [`${SITE_URL}/about`] } : {}),
-      images: [
-        {
-          url: "/og.png",
-          width: 1733,
-          height: 907,
-          alt: "ARES ReFlight Engineering Log social card with a conceptual white uncrewed research aircraft and the statement Evidence before confidence",
-        },
-      ],
+      images: [socialImage],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/og.png"],
+      images: [socialImage.url],
     },
   };
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Clock3 } from "lucide-react";
 import type { EngineeringArticle } from "@/content/articles";
 import { engineeringArticles } from "@/content/articles";
@@ -34,7 +35,7 @@ export function ArticlePage({ article }: { article: EngineeringArticle }) {
       about: article.topics,
       articleSection: article.status,
       isAccessibleForFree: true,
-      image: `${SITE_URL}/og.png`,
+      image: article.heroImage ? `${SITE_URL}${article.heroImage.src}` : `${SITE_URL}/og.png`,
     },
     {
       "@context": "https://schema.org",
@@ -66,6 +67,19 @@ export function ArticlePage({ article }: { article: EngineeringArticle }) {
             <span><Clock3 size={14} aria-hidden="true" /> {article.readingMinutes} min read</span>
           </div>
         </div>
+        {article.heroImage && (
+          <figure className="article-hero-media">
+            <Image
+              src={article.heroImage.src}
+              alt={article.heroImage.alt}
+              width={article.heroImage.width}
+              height={article.heroImage.height}
+              sizes="(max-width: 768px) calc(100vw - 32px), 1050px"
+              priority
+            />
+            <figcaption>CONCEPT VISUAL — The rendered board is not a manufactured PCB. Stage 5C confirms schematic closure only; placement, routing, fabrication, and physical power-up verification remain pending.</figcaption>
+          </figure>
+        )}
       </header>
 
       <article className="article-shell page-width">
@@ -95,13 +109,20 @@ export function ArticlePage({ article }: { article: EngineeringArticle }) {
             </section>
           )}
 
+          {article.internalLinks && article.internalLinks.length > 0 && (
+            <nav className="article-internal-links" aria-label="Related ARES ReFlight pages">
+              <span>PROJECT CONNECTIONS</span>
+              <div>{article.internalLinks.map((item) => <Link key={item.href} href={item.href}>{item.label}<ArrowUpRight size={14} /></Link>)}</div>
+            </nav>
+          )}
+
           <section className="article-author" aria-label="About the author">
             <span className="author-monogram" aria-hidden="true">AME</span>
             <div><small>AUTHOR</small><h2>{PROJECT_LEAD}</h2><b>{PROJECT_LEAD_TITLE}</b><p>Abdullah Mert Elgezen leads the engineering direction of ARES ReFlight, coordinating software architecture, telemetry integration, fixed-wing concept development, and system-level testing. The project remains an independent student-led aerospace engineering initiative.</p><Link href="/about">Project leadership <ArrowRight size={14} /></Link></div>
           </section>
 
           <section className="article-review-cta">
-            <div><small>RADICAL TECHNICAL TRANSPARENCY</small><h2>Challenge the assumptions.</h2><p>If a claim is unsupported, incomplete, misleading, or technically incorrect, identify it. Agreement is not required. Well-supported criticism is valuable.</p></div>
+            <div><small>RADICAL TECHNICAL TRANSPARENCY</small><h2>Challenge the assumptions.</h2><p>{article.reviewCallToAction ?? "If a claim is unsupported, incomplete, misleading, or technically incorrect, identify it. Agreement is not required. Well-supported criticism is valuable."}</p></div>
             <div><Link className="button button-light" href="/contribute">Share feedback <ArrowRight size={15} /></Link><Link className="button button-dark-outline" href="/corrections">View corrections <ArrowUpRight size={15} /></Link></div>
           </section>
         </div>

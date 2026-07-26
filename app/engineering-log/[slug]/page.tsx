@@ -19,6 +19,12 @@ export async function generateMetadata({ params }: Props) {
     type: "article",
     publishedTime: article.published,
     modifiedTime: article.updated,
+    image: article.heroImage ? {
+      url: article.heroImage.src,
+      width: article.heroImage.width,
+      height: article.heroImage.height,
+      alt: article.heroImage.alt,
+    } : undefined,
   });
 }
 

@@ -73,6 +73,8 @@ export const roadmap = [
   { era: "2026", title: "SITL and MAVLink integration", status: "SIMULATED" as ProjectStatus },
   { era: "2026", title: "Telemetry, replay, and diagnostics", status: "COMPLETED" as ProjectStatus },
   { era: "2026", title: "Initial stable Windows release", status: "COMPLETED" as ProjectStatus },
+  { era: "JUL 2026", title: "Rev A schematic closure", status: "COMPLETED" as ProjectStatus },
+  { era: "NEXT", title: "ARES Flight Computer PCB placement review", status: "PLANNED" as ProjectStatus },
   { era: "NEXT", title: "Aircraft structure prototype", status: "PLANNED" as ProjectStatus },
   { era: "NEXT", title: "Avionics bench testing", status: "PLANNED" as ProjectStatus },
   { era: "NEXT", title: "Ground station hardware", status: "PLANNED" as ProjectStatus },
@@ -82,6 +84,7 @@ export const roadmap = [
 ];
 
 export const developmentEntries = [
+  { slug: "ares-flight-computer-rev-a-schematic-closure", date: "JUL 2026", stage: "HARDWARE", category: "FLIGHT COMPUTER", title: "July 2026 — Rev A schematic closure", summary: "69 populated components, clean ERC, exact footprint and MPN coverage, ready for placement review.", status: "IN DEVELOPMENT" as ProjectStatus },
   { slug: "initial-ares-01-release", date: "JUL 2026", stage: "SOFTWARE", category: "RELEASE", title: "Initial ARES-01 Desktop Release", summary: "A stable Windows-native foundation for telemetry, simulation, replay, diagnostics, and technical reporting.", status: "COMPLETED" as ProjectStatus },
   { slug: "safety-gated-control", date: "JUL 2026", stage: "SIMULATION", category: "SAFETY", title: "Building a Safety-Gated Simulation Control Layer", summary: "Designing explicit local-SITL verification and operator gates before any simulation command can be issued.", status: "COMPLETED" as ProjectStatus },
   { slug: "modular-air-vehicle", date: "DATE TBD", stage: "AIRFRAME", category: "DESIGN", title: "Designing the Modular Air Vehicle Architecture", summary: "Exploring repairable structures, replaceable sections, and payload integration without inventing unvalidated performance claims.", status: "IN DEVELOPMENT" as ProjectStatus },
@@ -95,6 +98,7 @@ export const documentation = [
   ["COM-001", "MAVLink Integration", "Connection lifecycle, normalized telemetry, and ArduPilot SITL integration.", "SIMULATED"],
   ["SIM-001", "Simulation Environment", "Local SITL setup, safety boundary, mock data, and diagnostics.", "COMPLETED"],
   ["HW-001", "Hardware Concept", "Airframe, avionics, ground station, and tracker concept definition.", "IN DEVELOPMENT"],
+  ["HW-002", "ARES Flight Computer Rev A", "ARES-FC-REV-A-SCH-5C.0 schematic closure, bench/HIL boundary, exact component bindings, and Stage 6 placement gate.", "IN DEVELOPMENT"],
   ["SAF-001", "Safety Philosophy", "Simulation-only command restrictions and the planned path to hardware validation.", "COMPLETED"],
   ["TST-001", "Testing Strategy", "Automated verification, mock scenarios, bench gates, and future flight evidence.", "IN DEVELOPMENT"],
   ["REL-001", "Version History", "Release notes and semantic version records for each system layer.", "COMPLETED"],
