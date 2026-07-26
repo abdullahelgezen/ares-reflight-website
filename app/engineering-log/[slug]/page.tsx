@@ -19,7 +19,12 @@ export async function generateMetadata({ params }: Props) {
     type: "article",
     publishedTime: article.published,
     modifiedTime: article.updated,
-    image: article.heroImage ? {
+    image: article.socialImage ? {
+      url: article.socialImage.src,
+      width: article.socialImage.width,
+      height: article.socialImage.height,
+      alt: article.socialImage.alt,
+    } : article.heroImage ? {
       url: article.heroImage.src,
       width: article.heroImage.width,
       height: article.heroImage.height,

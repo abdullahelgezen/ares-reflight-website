@@ -35,7 +35,11 @@ export function ArticlePage({ article }: { article: EngineeringArticle }) {
       about: article.topics,
       articleSection: article.status,
       isAccessibleForFree: true,
-      image: article.heroImage ? `${SITE_URL}${article.heroImage.src}` : `${SITE_URL}/og.png`,
+      image: article.socialImage
+        ? `${SITE_URL}${article.socialImage.src}`
+        : article.heroImage
+          ? `${SITE_URL}${article.heroImage.src}`
+          : `${SITE_URL}/og.png`,
     },
     {
       "@context": "https://schema.org",
@@ -75,9 +79,14 @@ export function ArticlePage({ article }: { article: EngineeringArticle }) {
               width={article.heroImage.width}
               height={article.heroImage.height}
               sizes="(max-width: 768px) calc(100vw - 32px), 1050px"
+              unoptimized={article.heroImage.src.endsWith(".svg")}
               priority
             />
-            <figcaption>CONCEPT VISUAL — The rendered board is not a manufactured PCB. Stage 5C confirms schematic closure only; placement, routing, fabrication, and physical power-up verification remain pending.</figcaption>
+            <figcaption>
+              {article.slug === "ares-flight-computer-rev-a-stage-6-placement"
+                ? "DIGITAL PLACEMENT VIEW — Generated from the KiCad board database. This is not a photograph of manufactured hardware; routing and fabrication have not started."
+                : "CONCEPT VISUAL — The rendered board is not a manufactured PCB. At Stage 5C, placement and routing were pending; Stage 6 placement is now complete while routing, fabrication, and physical power-up verification remain pending."}
+            </figcaption>
           </figure>
         )}
       </header>
@@ -109,11 +118,56 @@ export function ArticlePage({ article }: { article: EngineeringArticle }) {
             </section>
           )}
 
+          {article.gallery && article.gallery.length > 0 && (
+            <section className="article-evidence" aria-labelledby="placement-evidence-gallery">
+              <div className="article-evidence-heading">
+                <small>GENERATED REVIEW ARTIFACTS</small>
+                <h2 id="placement-evidence-gallery">Placement evidence gallery</h2>
+                <p>These are direct KiCad outputs. They document the digital placement state and do not represent manufactured or physically validated hardware.</p>
+              </div>
+              <div className="article-evidence-grid">
+                {article.gallery.map((visual) => (
+                  <figure key={visual.src}>
+                    <a href={visual.src} target="_blank" rel="noreferrer" aria-label={`Open full-size evidence image: ${visual.caption}`}>
+                      <Image
+                        src={visual.src}
+                        alt={visual.alt}
+                        width={visual.width}
+                        height={visual.height}
+                        sizes="(max-width: 768px) calc(100vw - 32px), 410px"
+                        unoptimized={visual.src.endsWith(".svg")}
+                      />
+                    </a>
+                    <figcaption>{visual.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+              {article.evidenceLinks && article.evidenceLinks.length > 0 && (
+                <div className="article-evidence-downloads">
+                  {article.evidenceLinks.map((item) => (
+                    <a key={item.href} href={item.href} target="_blank" rel="noreferrer">
+                      <span><b>{item.label}</b><small>{item.detail}</small></span>
+                      <ArrowUpRight size={18} aria-hidden="true" />
+                    </a>
+                  ))}
+                </div>
+              )}
+            </section>
+          )}
+
           {article.internalLinks && article.internalLinks.length > 0 && (
             <nav className="article-internal-links" aria-label="Related ARES ReFlight pages">
               <span>PROJECT CONNECTIONS</span>
               <div>{article.internalLinks.map((item) => <Link key={item.href} href={item.href}>{item.label}<ArrowUpRight size={14} /></Link>)}</div>
             </nav>
+          )}
+
+          {article.nextMilestone && (
+            <Link className="article-next-milestone" href={article.nextMilestone.href}>
+              <span>NEXT MILESTONE</span>
+              <b>{article.nextMilestone.label}</b>
+              <ArrowRight size={16} aria-hidden="true" />
+            </Link>
           )}
 
           <section className="article-author" aria-label="About the author">
